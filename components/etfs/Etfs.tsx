@@ -90,12 +90,14 @@ const returnsPerYearData: Record<Year, { name: string; return: number }[]> = {
 
 export default function Etfs() {
   const [years, setYears] = useState<Year>(10);
-  const [initialAmount, setInitialAmount] = useState<number>(1000);
+  const [initialAmount, setInitialAmount] = useState("1000");
+
+  const initialAmountNumber = +initialAmount
 
   const result = calculateEtfsByYear(
     years,
     returnsPerYearData[years],
-    initialAmount
+    initialAmountNumber
   );
 
   return (
@@ -225,7 +227,7 @@ export default function Etfs() {
                 value={initialAmount}
                 min={0}
                 step={50}
-                onChange={(e) => setInitialAmount(+e.target.value)}
+                onChange={(e) => setInitialAmount(e.target.value)}
               />
             </div>
           </div>
@@ -264,7 +266,7 @@ export default function Etfs() {
           <div className="mt-8 p-6 bg-gray-800 rounded-lg shadow-xl text-lg font-semibold space-y-2">
             <p className="text-gray-400">
               Dinero ahorrado:{" "}
-              <span className="text-white">${formatNumber(initialAmount)}</span>
+              <span className="text-white">${formatNumber(initialAmountNumber)}</span>
             </p>
             <p className="text-[#8884d8]">
               Valor final en el SPY: ${formatNumber(result[years - 1].spy)}
