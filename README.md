@@ -8,7 +8,7 @@ Proyecto personal orientado a demostrar nivel profesional como desarrollador fro
 
 ## 🚀 Demo
 
-🔗 (A completar tras el primer deploy en Vercel)
+🔗 https://inversiones-app-phi.vercel.app/
 Actualmente en desarrollo local.
 
 ---
