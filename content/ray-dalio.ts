@@ -1,6 +1,6 @@
-import { ArticleContent } from "@/types/blog";
+import { BlogContent } from "@/types/blog";
 
-const content: ArticleContent = {
+const content: BlogContent = {
   title: "La Regla de Oro de Ray Dalio: Entender la Paridad de Riesgo",
   slug: "ray-dalio",
   sections: [

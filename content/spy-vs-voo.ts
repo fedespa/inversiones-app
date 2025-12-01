@@ -1,6 +1,6 @@
-import { ArticleContent } from "@/types/blog";
+import { BlogContent } from "@/types/blog";
 
-const content: ArticleContent = {
+const content: BlogContent = {
   title: "La Diferencia Clave entre SPY y VOO",
   slug: "spy-vs-voo",
   sections: [

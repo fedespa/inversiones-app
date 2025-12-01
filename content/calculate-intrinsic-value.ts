@@ -1,6 +1,6 @@
-import { ArticleContent } from "@/types/blog";
+import { BlogContent } from "@/types/blog";
 
-const content: ArticleContent = {
+const content: BlogContent = {
   title: "Cómo Calcular el Valor Intrínseco de una Acción",
   slug: "calculate-intrisic-value",
   sections: [

@@ -1,6 +1,7 @@
-import { ArticleContent } from "@/types/blog";
+import { BlogContent } from "@/types/blog";
 
-const content: ArticleContent = {
+
+const content: BlogContent = {
   title: "Beta y Alfa: Midiendo el Riesgo y el Rendimiento del Mercado",
   slug: "beta-alfa",
   sections: [

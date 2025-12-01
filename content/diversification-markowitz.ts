@@ -1,6 +1,6 @@
-import { ArticleContent } from "@/types/blog";
+import { BlogContent } from "@/types/blog";
 
-const content: ArticleContent = {
+const content: BlogContent = {
   title: "El Poder de la Diversificación: Más allá de los ETFs",
   slug: "diversification-markowitz",
   sections: [
